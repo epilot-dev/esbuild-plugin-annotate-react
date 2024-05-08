@@ -1,13 +1,14 @@
 {
-  "name": "esbuild-plugin-annotate-react",
-  "version": "0.0.0",
+  "name": "@epilot/esbuild-plugin-annotate-react",
+  "version": "0.0.1",
   "description": "An esbuild plugin that annotates React-rendered components with stable attributes to identify the source component.",
   "main": "dist/index.js",
   "scripts": {
     "test": "vitest",
     "build": "esw build src/index.ts --platform=node",
     "build:watch": "esw watch src/index.ts --platform=node",
-    "dev": "npm run build:watch"
+    "dev": "npm run build:watch",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "esbuild",

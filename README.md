@@ -18,10 +18,7 @@ Output:
 const MyComponent = () => {
   return React.createElement(
     "div",
-    {
-      "data-component": "MyComponent",
-      "data-file-source": "App.jsx"
-    },
+    { "data-component": "MyComponent" },
     "Hello World"
   );
 }
